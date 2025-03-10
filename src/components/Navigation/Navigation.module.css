@@ -1,0 +1,13 @@
+.link {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.active {
+    color: red;
+    text-decoration: underline;
+}
