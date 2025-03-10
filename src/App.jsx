@@ -3,15 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { lazy, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
-// import HomePage from './pages/HomePage/HomePage';
-// import ContactsPage from './pages/ContactsPage/ContactsPage';
-// import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
-// import LoginPage from './pages/LoginPage/LoginPage';
 import { fetchContacts } from './redux/contacts/operations';
 import { refreshUserThunk } from './redux/auth/operations';
 import { selectIsLoggedIn, selectIsRefreshing } from './redux/auth/selectors';
-import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
-import RestrictedRoute from './pages/RestrictedRoute/RestrictedRoute';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import RestrictedRoute from './components/RestrictedRoute/RestrictedRoute';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
